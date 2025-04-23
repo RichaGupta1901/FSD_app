@@ -22,7 +22,7 @@ export default function Navbar({ setAuth }) {
     localStorage.removeItem("importError");
 
     // Redirect to Upstox auth (backend will handle redirecting back to dashboard after)
-    window.location.href = "http://localhost:8000/api/upstox/auth";
+    window.location.href = "https://fsd-app-backend.onrender.com/api/upstox/auth";
   };
 
   const handleCsvUploadClick = () => {
@@ -35,7 +35,7 @@ export default function Navbar({ setAuth }) {
     formData.append("file", file);
     localStorage.setItem("userEmail", user?.email);
 
-    fetch("http://localhost:8000/api/portfolio/upload", {
+    fetch("https://fsd-app-backend.onrender.com/api/portfolio/upload", {
       method: "POST",
       headers: {
         "x-user-email": user?.email,
@@ -78,7 +78,7 @@ export default function Navbar({ setAuth }) {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:8000/api/auth/logout", {}, { withCredentials: true });
+      await axios.post("https://fsd-app-backend.onrender.com/api/auth/logout", {}, { withCredentials: true });
       setAuth(false);
       navigate("/login");
     } catch (err) {
