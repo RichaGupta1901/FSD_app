@@ -11,7 +11,7 @@ export default function Sidebar() {
     const email = localStorage.getItem("userEmail"); // must be set after login
     if (!email) return;
 
-    axios.get("http://localhost:8000/api/portfolio/holdings", {
+    axios.get("https://fsd-app-backend.onrender.com/api/portfolio/holdings", {
       headers: { "x-user-email": email }
     })
     .then(res => {
