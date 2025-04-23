@@ -1,0 +1,169 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #1f2937;  */
+  background-color: #263141; 
+  color: white;
+  padding: 16px 32px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative; 
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 85px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* --- Buttons --- */
+.portfolio-btn,
+.about-btn,
+.home-btn,
+.contact-btn {
+  background-color: #4c9b4e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 90px; /* ensures uniform width */
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.portfolio-btn:hover,
+.about-btn:hover,
+.home-btn:hover,
+.contact-btn:hover {
+  background-color: #95da97;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Dropdowns --- */
+.portfolio-wrapper,
+.profile-wrapper {
+  position: relative;
+}
+
+.portfolio-options {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+
+.portfolio-options button {
+  background-color: white;
+  color: #111827;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.portfolio-options button:hover {
+  background-color: #e5e7eb;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.profile-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  font-weight: 500;
+  font-size: 15px;
+  color: #f3f4f6;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 115%;
+  right: 0;
+  background-color: white;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 8px;
+  min-width: 140px;
+  z-index: 1000;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-dropdown button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  background: none;
+  text-align: left;
+  border-radius: 6px;
+  color: #1e293b;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.profile-dropdown button:hover {
+  background-color: #f3f4f6;
+}
+
+/* .home-btn {
+  background-color: #4c9b4e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-btn:hover {
+  background-color: #95da97;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+} */
+

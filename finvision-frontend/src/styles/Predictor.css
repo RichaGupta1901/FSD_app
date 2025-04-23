@@ -1,0 +1,54 @@
+.predictor-widget {
+    background-color: #f9fafb;
+    border-radius: 10px;
+    width: 450px;
+    padding: 20px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    font-family: 'Segoe UI', sans-serif;
+    z-index: 2;
+  }
+  
+  .predictor-widget h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #111827;
+  }
+  
+  .predictor-widget .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .predictor-widget select,
+  .predictor-widget button {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+  }
+  
+  .predictor-widget button {
+    background-color: #61b5e9;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .predictor-widget button:hover {
+    background-color: #3662dc;
+  }
+  
+  .predictor-widget .result {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #374151;
+  }
+  
+  

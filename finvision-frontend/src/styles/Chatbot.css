@@ -1,0 +1,22 @@
+.chatbot-container {
+  padding: 0.5rem;
+  background: linear-gradient(to bottom, #f9fafb, #e5e7eb);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  height: 800px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.chatbot-iframe {
+  flex-grow: 1;
+  border: none;
+  width: 98%;
+  margin: auto;
+}
+

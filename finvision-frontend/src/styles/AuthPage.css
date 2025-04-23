@@ -1,0 +1,69 @@
+/* .auth-layout {
+    display: flex;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .auth-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    background: #f1f5f9;
+  }
+  
+  .auth-right {
+    flex: 1;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+  
+  .branding {
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .branding h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .branding p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+  }
+  
+  .chart-card {
+    background: white;
+    color: black;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chart-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .bars {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    height: 100px;
+  }
+  
+  .bars div {
+    width: 20px;
+    background: #f97316;
+    border-radius: 5px;
+  }
+   */
