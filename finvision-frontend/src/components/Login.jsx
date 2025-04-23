@@ -43,7 +43,7 @@ export default function Login({ setAuth }) {
     if (!validate()) return;
 
     try {
-      const res = await axios.post("http://localhost:8000/api/auth/login", { email, pin }, { withCredentials: true });
+      const res = await axios.post("https://fsd-app-backend.onrender.com/api/auth/login", { email, pin }, { withCredentials: true });
       if (res.status === 200) {
         setAuth(true);
         navigate("/dashboard");
@@ -66,7 +66,7 @@ export default function Login({ setAuth }) {
       const { displayName, email, uid } = user;
 
       // Send user info to your Flask backend
-      await axios.post("http://localhost:8000/api/auth/saveUser", {
+      await axios.post("https://fsd-app-backend.onrender.com/api/auth/saveUser", {
         name: displayName,
         email,
         uid
