@@ -19,7 +19,7 @@ const LoginWithGoogle = () => {
       const { email } = result.user;
 
       // Send to backend to register/login
-      await axios.post("http://localhost:8000/api/auth/signup", {
+      await axios.post("https://fsd-app-backend.onrender.com/api/auth/signup", {
         email: result.user.email,
         name: result.user.displayName,
         uid: result.user.uid,
