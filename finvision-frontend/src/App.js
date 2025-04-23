@@ -21,15 +21,15 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [auth, setAuth] = useState(null);
 
-  useEffect(() => {
-    fetch("https://us-central1-finvision-51433.cloudfunctions.net/myFunction")
-      .then(res => res.text())
-      .then(data => {
-        console.log("Response:", data);
-        alert(data);
-      })
-      .catch(err => console.error("Error calling function:", err));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://us-central1-finvision-51433.cloudfunctions.net/myFunction")
+  //     .then(res => res.text())
+  //     .then(data => {
+  //       console.log("Response:", data);
+  //       alert(data);
+  //     })
+  //     .catch(err => console.error("Error calling function:", err));
+  // }, []);
   
   useEffect(() => {
     axios.get("https://fsd-app-backend.onrender.com/api/auth/check-session", { withCredentials: true })
