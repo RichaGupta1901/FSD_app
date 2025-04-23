@@ -11,7 +11,7 @@ const Predictor = () => {
 
   // 🔽 Load available stock symbols
   useEffect(() => {
-    axios.get("http://localhost:5000/api/symbols")
+    axios.get("https://fsd-app-frontend.onrender.com/api/symbols")
       .then((res) => {
         setSymbols(res.data);
         if (res.data.length > 0) {
@@ -26,7 +26,7 @@ const Predictor = () => {
     if (!selected) return;
 
     setLoading(true);
-    axios.get(`http://localhost:5000/api/historical?symbol=${selected}`)
+    axios.get(`https://fsd-app-frontend.onrender.com/api/historical?symbol=${selected}`)
       .then((res) => {
         //console.log("📦 Raw historical data response:", res.data); 
 
