@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 // axios.defaults.withCredentials = true;
 
 const app = express();
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: ['http://localhost:3000', 'https://fsd-app-frontend.onrender.com'], credentials: true }));
 
 const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } });
