@@ -70,7 +70,7 @@ export default function Dashboard({ user }) {
   
     if (!email) return;
   
-    axios.get("http://localhost:8000/api/portfolio/holdings", {
+    axios.get("https://fsd-app-backend.onrender.com/api/portfolio/holdings", {
       headers: { "x-user-email": email }
     })
     .then(res => {
