@@ -32,7 +32,7 @@ function App() {
   }, []);
   
   useEffect(() => {
-    axios.get("http://localhost:8000/api/auth/check-session", { withCredentials: true })
+    axios.get("https://fsd-app-backend.onrender.com/api/auth/check-session", { withCredentials: true })
       .then((res) => {
         setAuth(res.data.user);
         setIsAuthenticated(true); // ✅ set auth flag
