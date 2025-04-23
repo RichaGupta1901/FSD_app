@@ -7,7 +7,7 @@ import "../styles/Dashboard.css";
 import axios from "axios";
 axios.defaults.withCredentials = true;
 
-const socket = io("http://localhost:5000");
+const socket = io("https://fsd-app-frontend.onrender.com");
 
 export default function Dashboard({ user }) {
   const [stockData, setStockData] = useState([]);
@@ -33,7 +33,7 @@ export default function Dashboard({ user }) {
 
   // 🔽 Fetch available symbols (dropdown)
   useEffect(() => {
-    axios.get("http://localhost:5000/api/symbols")
+    axios.get("https://fsd-app-frontend.onrender.com/api/symbols")
       .then(res => {
         console.log("✅ Symbols:", res.data);
         setStockList(res.data);
@@ -46,7 +46,7 @@ export default function Dashboard({ user }) {
     setIsLoading(true);
     setStockData([]);
 
-    axios.get(`http://localhost:5000/api/historical?symbol=${selectedStock}`)
+    axios.get(`https://fsd-app-frontend.onrender.com/api/historical?symbol=${selectedStock}`)
       .then(res => {
         setStockData(res.data);
         setIsLoading(false);
