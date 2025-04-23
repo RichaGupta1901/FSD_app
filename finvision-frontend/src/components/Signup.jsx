@@ -52,7 +52,7 @@ export default function Signup() {
     if (!validate()) return;
 
     try {
-      await axios.post("http://localhost:8000/api/auth/signup", { email, pin });
+      await axios.post("https://fsd-app-backend.onrender.com/api/auth/signup", { email, pin });
       navigate("/login");
     } catch (err) {
       setErrors(prev => ({
@@ -72,7 +72,7 @@ export default function Signup() {
       const { displayName, email, uid } = user;
 
       // Save user info to your backend (demat not included)
-      await axios.post("http://localhost:8000/api/auth/saveUser", {
+      await axios.post("https://fsd-app-backend.onrender.com/api/auth/saveUser", {
         name: displayName,
         email,
         uid
